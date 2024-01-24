@@ -1,24 +1,17 @@
-const mobileMenuBtn=document.querySelector('#mobile-menu')
-const sidebar=document.querySelector('.sidebar')
-const cerrarMenuBtn=document.querySelector('#cerrar-menu')
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
 
-if(mobileMenuBtn){
-    mobileMenuBtn.addEventListener('click',()=>{
-        sidebar.classList.add('mostrar')
-    })
+// Get the header
+var header = document.getElementById("header");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.scrollY > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
 }
-if(cerrarMenuBtn){
-    cerrarMenuBtn.addEventListener('click',()=>{
-        sidebar.classList.add('ocultar')
-        setTimeout(() => {
-            sidebar.classList.remove('mostrar')
-            sidebar.classList.remove('ocultar')
-        }, 1000);
-    })
-}
-const anchoPantalla=document.body.clientWidth
-window.addEventListener('rezise',()=>{
-    if(anchoPantalla>=768){
-        sidebar.classList.remove('mostrar')
-    }
-})
