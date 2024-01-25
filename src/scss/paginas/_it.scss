@@ -1,0 +1,35 @@
+@use 'base/mixins' as m;
+.skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style-type: none;
+    justify-content: space-between;
+    gap: 2rem;
+    @include m.desktop{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    
+
+    li{
+        font-size: 2rem;
+        padding: 1rem 2rem;
+        border: 2px solid rgb(0, 119, 255);
+        border-radius: 1rem;
+    }
+}
+.content-skills{
+    padding: 2rem;
+    margin: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    border: 2px solid gray;
+    border-radius: 1rem;
+}
+.content{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
