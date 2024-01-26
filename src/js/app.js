@@ -28,8 +28,8 @@ document.addEventListener('DOMContentLoaded',function(){
           </button>
           <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="it.html">Career In Information Technology</a></li>
-              <li><a class="dropdown-item" href="#">Career As Investor</a></li>
-              <li><a class="dropdown-item" href="#">Career As Electrical Engineer</a></li>
+              <li><a class="dropdown-item" href="investor.html">Career As Investor</a></li>
+              <li><a class="dropdown-item" href="elec.html">Career As Electrical Engineer</a></li>
           </ul>
       </div>
       <div class="nav-item dropdown">
@@ -38,9 +38,9 @@ document.addEventListener('DOMContentLoaded',function(){
               Certificates
           </button>
           <ul class="dropdown-menu">
-              <li><button class="dropdown-item" type="button">Career As Information Technology</button></li>
-              <li><button class="dropdown-item" type="button">Career As Investor</button></li>
-              <li><button class="dropdown-item" type="button">Career As Electrical Engineer</button></li>
+              <li><button class="dropdown-item" type="button">Information Technology Certificates</button></li>
+              <li><button class="dropdown-item" type="button">Investor Certificates</button></li>
+              <li><button class="dropdown-item" type="button">Electrical Engineer Curriculum</button></li>
           </ul>
       </div>
       <div class="nav-item dropdown">
@@ -56,5 +56,51 @@ document.addEventListener('DOMContentLoaded',function(){
       </div>
   </nav>
   `;
+
+  // Function to select a specific table column by index
+  function selectTableColumn(table, columnIndex) {
+    const rows = table.rows;
+    
+
+    for (let i = 0; i < rows.length; i++) {
+      const cells = rows[i].cells;
+      
+      if (cells.length > columnIndex) {
+        // Select the cell in the specified column
+        const selectedCell = cells[columnIndex];
+        console.log(selectedCell)
+        // Do something with the selected cell (e.g., change its style)
+        if(selectedCell.textContent.charAt(0)=='+'){
+            selectedCell.style.color='green';
+        }else if(selectedCell.textContent.charAt(0)=='-'){
+            selectedCell.style.color='red';
+        }
+        
+      }
+    }
+  }
+  function parsePercentageString(percentageString) {
+    // Remove the '+' sign and '%' symbol
+    const numericPart = percentageString.replace(/[+%]/g, '');
+  
+    // Convert the numeric part to a decimal number
+    const decimalNumber = parseFloat(numericPart);
+  
+    // Check if the conversion was successful
+    if (!isNaN(decimalNumber)) {
+      // Convert the decimal number to a percentage
+      const percentageValue = decimalNumber / 100;
+      return percentageValue;
+    } else {
+      // Handle the case where the input is not a valid number
+      console.error('Invalid percentage string:', percentageString);
+      return null;
+    }
+  }
+
+  // Usage example: select the second column (index 1)
+  const myTable = document.getElementById('table-metrics');
+  selectTableColumn(myTable, 2);
+  selectTableColumn(myTable, 3);
 })
 
