@@ -14,31 +14,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Sofia&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body data-bs-theme="dark" class="bg-body-tertiary">
     <header class="header-main" id="header"></header><!--Content included by JavaScript-->
     
-    <section>
-        <div class="content-inv">
-            <h2>Investor Career</h2>
-            <div class="content-description">
-                <picture>
-                    <source srcset="../img/Portfolio-performance.png" type="image/png">
-                    <source srcset="../img/Portfolio-performance.webp" type="image/webp">
-                    <img loading="lazy" src="../img/Portfolio-performance.webp" alt="portfolio">
-                </picture>
-                <p>In April of 2020 I began my career as long-term investor buying US stocks mainly,
-                    during this time I perfected the skills in market psychology to make smart desitions.
-                    Later I learn about Efficient Portfolios theory to make the best portfolios in return
-                    with the minimum posible risk, to reach that goal I use my knowledge in Python to make
-                    a model to give me efficient portfolios. Finally I learned corporate finance and accounting finance
-                    to read and understand the financial statements ans the balance sheet, income statement and
-                    cash flow statement. All this knowledge gave me a great outperform in the financial markets.
-                </p>
-            </div>
+    <section data-bs-theme="dark" class="bg-body-tertiary">
+        <div class="content-inv bg-body-secondary">
+            <h2 class="text-light">Investor Career</h2>
+            <p class="text-light">In April of 2020 I began my career as long-term investor buying US stocks mainly,
+                during this time I perfected the skills in market psychology to make smart desitions.
+                Later I learn about Efficient Portfolios theory to make the best portfolios in return
+                with the minimum posible risk, to reach that goal I use my knowledge in Python to make
+                a model to give me efficient portfolios. Finally I learned corporate finance and accounting finance
+                to read and understand the financial statements ans the balance sheet, income statement and
+                cash flow statement. All this knowledge gave me a great outperform in the financial markets.
+            </p>
         </div>
-    </section>
-    <section>
-        <table class="table" id="table-metrics">
+        <div class="content-charts">
+          <picture>
+            <source srcset="../img/Portfolio-performance.png" type="image/png">
+            <source srcset="../img/Portfolio-performance.webp" type="image/webp">
+            <img loading="lazy" src="../img/Portfolio-performance.webp" alt="portfolio">
+          </picture>
+
+          <table class="table" id="table-metrics">
             <thead>
               <tr>
                 <th scope="col">#</th>
@@ -80,6 +78,11 @@
               </tr>
             </tbody>
           </table>
+        </div>
+        
+    </section>
+    <section>
+        
     </section>
     <footer class="footer">
         <p class="fw-bold">Juan Camilo Palacio Castaño. Portfolio &#169</p>
