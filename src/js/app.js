@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded',function(){
             <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="cert_it.html">Information Technology Certificates</a></li>
                   <li><a class="dropdown-item" href="cert_investor.html">Investor Certificates</a></li>
-                  <li><a class="dropdown-item" href="elec.html">Electrical Engineer Curriculum</a></li>
+                  <li><a class="dropdown-item" href="cert_elec.html">Electrical Engineer Curriculum</a></li>
             </ul>
         </div>
         <div class="nav-item dropdown">
@@ -49,9 +49,9 @@ document.addEventListener('DOMContentLoaded',function(){
                 Projects
             </button>
             <ul class="dropdown-menu">
-                <li><button class="dropdown-item" type="button">Career As Information Technology</button></li>
-                <li><button class="dropdown-item" type="button">Career As Investor</button></li>
-                <li><button class="dropdown-item" type="button">Career As Electrical Engineer</button></li>
+                <li><a class="dropdown-item" href="proj_it.html">IT Projects</button></li>
+                <li><a class="dropdown-item" href="cert_it.html">Investor Projects</button></li>
+                <li><a class="dropdown-item" href="cert_it.html">Electrical Engineer Projects</button></li>
             </ul>
         </div>
 

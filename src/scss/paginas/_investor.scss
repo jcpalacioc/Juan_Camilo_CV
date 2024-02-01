@@ -1,3 +1,5 @@
+@use 'base/mixins' as m;
+
 .content-inv{
     display: flex;
     flex-direction: column;
@@ -5,6 +7,25 @@
     margin: 4rem;
     padding: 2rem;
     border-radius: 1rem;
+    position: relative;
+
+    &--top_space{
+        padding-top: 10rem;
+    }
+    &--image_embeded{
+        img{
+            height: 7rem;
+            border-radius: 50%;
+            position: absolute;
+            left: 3rem;
+            top: 2rem;
+        }
+        @include m.tablet{
+            img{
+                height: 10rem;
+            }
+        }
+    }
 }
 .positive{
     color: greenyellow;
@@ -26,4 +47,22 @@
 }
 .content-charts{
     display: flex;
+    margin-bottom: 2rem;
+    flex-direction: column;
+    img{
+        width: 100%;
+    }
+    @include m.tablet{
+        flex-direction: row;
+    }
+    tr{
+        font-size: 1.4rem;
+        
+        
+    }
+    td{
+        text-decoration: solid;
+        color: rgb(44, 44, 44);
+        background-color: white;
+    }
 }
