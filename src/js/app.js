@@ -50,8 +50,8 @@ document.addEventListener('DOMContentLoaded',function(){
             </button>
             <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="proj_it.html">IT Projects</a></li>
-                <li><a class="dropdown-item" href="cert_it.html">Investor Projects</a></li>
-                <li><a class="dropdown-item" href="cert_it.html">Electrical Engineer Projects</a></li>
+                <li><a class="dropdown-item" href="proj_investor.html">Investor Projects</a></li>
+                <li><a class="dropdown-item" href="proj_elec.html">Electrical Engineer Projects</a></li>
             </ul>
         </div>
 
