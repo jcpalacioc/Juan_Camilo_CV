@@ -95,3 +95,21 @@
         color: v.$grisClaro;
     }
 }
+.resume{
+    margin-bottom: 2rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    p{
+        text-align: center;
+        max-width: 70rem;
+    }
+
+    background-image: url("../../img/cover_cv.png");
+}
+.content-sections{
+    max-width: 10rem;
+
+    gap: 2rem;
+    display: flex;
+}
