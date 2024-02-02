@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded',function(){
   //Create the header template
   let header_el=document.querySelector('.header-main');
   header_el.innerHTML=`
-  <a href='index.html' class="enlace-logo"><h1 class="logo">Juan Camilo Palacio Castaño</h1></a>
+  <a href='../index.html' class="enlace-logo"><h1 class="logo">Juan Camilo Palacio Castaño</h1></a>
   <nav class="navbar navbar-expand-lg bg-body-indigo-100 navegacion">
         <div class="nav-item dropdown"> 
             <button class="btn btn-primary dropdown-toggle menu" type="button" data-bs-toggle="dropdown"
