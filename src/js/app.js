@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded',function(){
   //Change the footer last update
   const footer=document.querySelector('footer');
   const footer_date=footer.childNodes[3];
-  footer_date.textContent='Last update 2024-02-02.'
+  footer_date.textContent='Last update 2024-03-31.'
 
   // Function to select a specific table column by index
   function selectTableColumn(table, columnIndex) {
