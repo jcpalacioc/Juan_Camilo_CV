@@ -1,0 +1,50 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+@include m.tablet{
+    .experience{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.contenido-exp{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-direction: row;
+    
+}
+.tarjeta-exp{
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+
+    li{
+        font-size: 1.2rem;
+    }
+}
+
+.barra-lateral{
+    display: flex;
+    height: fit-content;
+    z-index: 2;
+    overflow: clip;
+    overflow-clip-margin: content-box;
+}
+
+canvas {
+    image-rendering: crisp-edges; /* O 'crisp-edges' */
+}
+
+.titulos{
+    p{
+        font-weight: 700;
+        font-size: 1.4rem;
+        color: black;
+    }
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    :nth-child(2){
+        text-align: end;
+    }
+}

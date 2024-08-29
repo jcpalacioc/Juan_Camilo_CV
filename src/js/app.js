@@ -21,6 +21,17 @@ document.addEventListener('DOMContentLoaded',function(){
   header_el.innerHTML=`
   <a href='../index.html' class="enlace-logo"><h1 class="logo">Juan Camilo Palacio Castaño</h1></a>
   <nav class="navbar navbar-expand-lg bg-body-indigo-100 navegacion">
+
+        <div class="nav-item dropdown">
+          <button class="btn btn-primary dropdown-toggle menu" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Experience
+          </button>
+          <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="experience.html">Complete Experience</a></li>
+          </ul>
+        </div>
+
         <div class="nav-item dropdown"> 
             <button class="btn btn-primary dropdown-toggle menu" type="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
@@ -58,6 +69,54 @@ document.addEventListener('DOMContentLoaded',function(){
       
   </nav>
   `;
+
+
+  ///////////////////////////////////////////////////////////////////////////////////////////////
+  let parentCanva=document.querySelectorAll(".contenido-exp")[0];
+  let canvas = document.querySelectorAll(".barra-lateral")[0];
+  canvas.height=parentCanva.clientHeight
+  let ctx = canvas.getContext("2d");
+  // Set dot properties
+  const dotX = 15; // X-coordinate
+  const dotY = 20; // Y-coordinate
+  const dotRadius = 8; // Dot radius
+  let dotColor = "green"; // Dot color
+
+  // Draw the green dot
+  ctx.beginPath();
+  ctx.arc(dotX, dotY, dotRadius, 0, 2 * Math.PI);
+  ctx.fillStyle = dotColor;
+  ctx.fill();
+
+  ctx.strokeStyle = "black";
+
+
+  ctx.moveTo(15, 28);
+  ctx.lineTo(15, parentCanva.clientHeight);
+  ctx.stroke();
+
+  //Segundo canva sobre la experiencia freelance
+  parentCanva=document.querySelectorAll(".contenido-exp")[1];
+  canvas = document.querySelectorAll(".barra-lateral")[1];
+  canvas.height=parentCanva.clientHeight
+  ctx = canvas.getContext("2d");
+
+  dotColor = "orange"; // Dot color
+
+  // Draw the green dot
+  ctx.beginPath();
+  ctx.arc(dotX, dotY, dotRadius, 0, 2 * Math.PI);
+  ctx.fillStyle = dotColor;
+  ctx.fill();
+
+  ctx.strokeStyle = "black";
+
+
+  ctx.moveTo(15, 28);
+  ctx.lineTo(15, parentCanva.clientHeight);
+  ctx.stroke();
+
+
 
   //Change the footer last update
   const footer=document.querySelector('footer');
