@@ -91,7 +91,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 7rem;
+    gap: 5rem;
     background-color: rgba($color: #0b0b0b, $alpha: 0.9);
     @include m.tablet{
         flex-direction: row;
@@ -102,10 +102,7 @@
     align-items: center;
 
     .inner-img{
-        position: absolute;
-        transform: translate(-125%, -50%);
-        max-width: 100%; /* Ensure the inner image doesn't exceed the container */
-        max-height: 100%;
+        margin: 3rem;
     }
 }
 .card--cover{
@@ -120,9 +117,14 @@
     align-items: center;
     justify-content: center;
     flex-grow: 1;
+    background-color: rgb(32, 32, 32);
     p{
         max-width: 30rem;
         color: v.$grisClaro;
+        text-align: center;
+        @include m.tablet{
+            text-align: left;
+        }
     }
 }
 .resume{
@@ -131,10 +133,20 @@
     display: flex;
     justify-content: center;
     p{
-        text-align: center;
-        max-width: 70rem;
+        text-align: justify;
+        margin: 2rem 4rem;
+        padding: 1rem;
+        border: 1px solid v.$grisOscuro;
+        border-radius: 2rem;
     }
-    background-color: black;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    h2{
+        color: v.$negro;
+        text-align: center;
+        font-weight: 700;
+        font-size: 5rem;
+    }
 
 }
 .content-sections{
@@ -142,4 +154,15 @@
 
     gap: 2rem;
     display: flex;
+}
+
+.nav-item{
+    width: 100%;
+    button{
+        width: 100%;
+    }
+
+    @include m.telefono{
+        width: auto;
+    }
 }

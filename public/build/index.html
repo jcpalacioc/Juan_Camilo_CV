@@ -12,6 +12,8 @@
         rel="stylesheet">
     <link rel="stylesheet" href="css/app.css">
     <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Sofia&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/x-icon" href="../build/img/J Key.ico">
 </head>
 
 <body>
@@ -69,13 +71,16 @@
 
     </header>
 
+
+
     <section class="cover">
         <div class="img-container">
-            <picture>
+            <!--<picture>
                 <source srcset="img/spiral.webp" type="image/webp">
                 <source srcset="img/spiral.png" type="image/png">
                 <img loading="lazy" width="300px" height="300px" src="img/spiral.webp" alt="Cover">
             </picture>
+            Quitar espiral-->
             <picture>
                 <source srcset="img/Imagen CV.webp" type="image/webp">
                 <source srcset="img/Imagen CV.png" type="image/png">
@@ -84,8 +89,8 @@
         </div>
 
         <div class="cover-desc-container">
-            <p class="cover--desc">Welcome to the Juan Camilo's porfolio.
-                Here you will find all information about my achievements and skills.</p>
+            <p class="cover--desc">Welcome to my professional portfolio.
+                Here you can review my full professional path, experience, certificates, awards and skills.</p>
         </div>
 
         <div class="card border-primary mb-3 card--cover" style="max-width: 24rem;">
@@ -108,8 +113,32 @@
             </div>
         </div>
     </section>
+
+
+    <section>
+        <div class="summary">
+            <div class="resume bg-white">
+                <h2>Summary</h2>
+                <p>Professional with over 4 years of experience as an investor and asset manager, consistently outperforming the S&P 500. As a Data Analyst, I have optimized processes for more than 2 years, achieving significant cost reductions and improving the quality of client reports. Expert in machine learning, focusing on time series forecasting, tabular data, tree-based gradient boosted models, and feature engineering. Awarded a silver medal in the Kaggle competition Optiver Trading at the Close.
+                </p>
+            </div>
+        </div>
+
+        
+
+    </section>
+
+
     <section>
         <div class="container-cards">
+            <div class="card" style="width: 30rem;">
+                <img width="300px" height="300px" src="img/Experience.webp" class="card-img-top" alt="IElectricas">
+                <div class="card-body">
+                    <h2 class="card-title fs-1">Complete Experience</h5>
+                        <p class="card-text">Explore my comprehensive experience and discover my achievements.</p>
+                        <a href="html/experience.html" class="btn btn-primary">View</a>
+                </div>
+            </div>
             <div class="card" style="width: 30rem;">
                 <img width="300px" height="300px" src="img/languajes.webp" class="card-img-top" alt="languajes">
                 <div class="card-body">
@@ -122,24 +151,15 @@
                 <img width="300px" height="300px" src="img/Etoro performance.webp" class="card-img-top" alt="portfolio">
                 <div class="card-body">
                     <h2 class="card-title fs-1">Investor In Capital Markets</h5>
-                        <p class="card-text">Look at my carrer as stock investor in capital markets and how I apply the
-                            corporate finance and accounting knowledge</p>
+                        <p class="card-text">Professional stock investor and asset manager with return of capital invested above +25% annual for more than 4 years, fundamental analysis, account management</p>
                         <a href="html/investor.html" class="btn btn-primary">View</a>
-                </div>
-            </div>
-            <div class="card" style="width: 30rem;">
-                <img width="300px" height="300px" src="img/IElectricas.webp" class="card-img-top" alt="IElectricas">
-                <div class="card-body">
-                    <h2 class="card-title fs-1">Electrical Engineer</h5>
-                        <p class="card-text">See some of the projects and experience of my principal that is electrical
-                            engineering.</p>
-                        <a href="html/elec.html" class="btn btn-primary">View</a>
                 </div>
             </div>
         </div>
 
     </section>
 
+    <!--
     <section>
         <div class="resume bg-black">
             <p class="text-light">I invite you to explore my journey, 
@@ -167,11 +187,13 @@
                 <li class="skill-item">Responsibility</li>
             </ul>
         </div>
+    
     </section>
+    Seccion quitada-->
 
     <footer class="footer">
         <p class="fw-bold">Juan Camilo Palacio Castaño. Portfolio &#169</p>
-        <p class="fs-2">Last update 2024-08-28.</p>
+        <p class="fs-2">Last update 2025-01-11.</p>
         <p class="fs-2">FrontEnd designed by Juan Camilo Palacio Castaño with bootstrap, html and sass.</p>
     </footer>
     
