@@ -16,59 +16,120 @@ document.addEventListener('DOMContentLoaded',function(){
     }
   }
 
+  const fileName = window.location.pathname.split("/").pop(); 
+  // obtiene el nombre del archivo actual, ej: "index_es.html"
+
   //Create the header template
   let header_el=document.querySelector('.header-main');
-  header_el.innerHTML=`
-  <a href='../index.html' class="enlace-logo"><h1 class="logo">Juan Camilo Palacio Castaño</h1></a>
-  <nav class="navbar navbar-expand-lg bg-body-indigo-100 navegacion">
 
-        <div class="nav-item dropdown">
-          <button class="btn btn-primary dropdown-toggle menu" type="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Experience
-          </button>
-          <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="experience.html">Complete Experience</a></li>
-          </ul>
-        </div>
+  if (fileName.endsWith("_es.html")) {
+      header_el.innerHTML=`
+      <a href='../es/index.html' class="enlace-logo">
+            <h1 class="logo">Juan Camilo Palacio Castaño</h1>
+        </a>
+        <nav class="navbar navbar-expand-lg bg-body-indigo-100 navegacion">
 
-        <div class="nav-item dropdown"> 
-            <button class="btn btn-primary dropdown-toggle menu" type="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Careers
-            </button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="it.html">Career In Information Technology</a></li>
-                <li><a class="dropdown-item" href="investor.html">Career As Investor</a></li>
-                <li><a class="dropdown-item" href="elec.html">Career As Electrical Engineer</a></li>
-            </ul>
-        </div>
-        <div class="nav-item dropdown">
-            <button class="btn btn-primary dropdown-toggle menu" type="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Certificates
-            </button>
-            <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="cert_it.html">Information Technology Certificates</a></li>
-                  <li><a class="dropdown-item" href="cert_investor.html">Investor Certificates</a></li>
-                  <li><a class="dropdown-item" href="cert_elec.html">Electrical Engineer Curriculum</a></li>
-            </ul>
-        </div>
-        <div class="nav-item dropdown">
-            <button class="btn btn-primary dropdown-toggle menu" type="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Projects
-            </button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="proj_it.html">IT Projects</a></li>
-                <li><a class="dropdown-item" href="proj_investor.html">Investor Projects</a></li>
-                <li><a class="dropdown-item" href="proj_elec.html">Electrical Engineer Projects</a></li>
-            </ul>
-        </div>
 
-      
-  </nav>
-  `;
+            <div class="nav-item dropdown">
+                <button class="btn btn-primary dropdown-toggle menu" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Mis Creaciones
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../html/it.html">Cursos Creados</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-item dropdown">
+                <button class="btn btn-primary dropdown-toggle menu" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Experiencia
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../html/experience_es.html">Experiencia Completa</a></li>
+                </ul>
+            </div>
+
+
+            
+            <div class="nav-item dropdown">
+                <button class="btn btn-primary dropdown-toggle menu" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Certificados
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../html/cert_it.html">Certificados de Tecnología de la Información</a></li>
+                    <li><a class="dropdown-item" href="../html/cert_investor.html">Certificados como Gestor de Activos</a></li>
+                </ul>
+            </div>
+            <div class="nav-item dropdown">
+                <button class="btn btn-primary dropdown-toggle menu" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Proyectos
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../html/proj_it.html">Proyectos IT</a></li>
+                    <li><a class="dropdown-item" href="../html/proj_investor.html">Proyectos como Gestor de Activos</a></li>
+                </ul>
+            </div>
+        </nav>
+      `;
+  } else {
+      header_el.innerHTML=`
+      <a href='../index.html' class="enlace-logo"><h1 class="logo">Juan Camilo Palacio Castaño</h1></a>
+      <nav class="navbar navbar-expand-lg bg-body-indigo-100 navegacion">
+
+            <div class="nav-item dropdown">
+              <button class="btn btn-primary dropdown-toggle menu" type="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Experience
+              </button>
+              <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="experience.html">Complete Experience</a></li>
+              </ul>
+            </div>
+
+            <div class="nav-item dropdown"> 
+                <button class="btn btn-primary dropdown-toggle menu" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Careers
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="it.html">Career In Information Technology</a></li>
+                    <li><a class="dropdown-item" href="investor.html">Career As Investor</a></li>
+                    <li><a class="dropdown-item" href="elec.html">Career As Electrical Engineer</a></li>
+                </ul>
+            </div>
+            <div class="nav-item dropdown">
+                <button class="btn btn-primary dropdown-toggle menu" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Certificates
+                </button>
+                <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="cert_it.html">Information Technology Certificates</a></li>
+                      <li><a class="dropdown-item" href="cert_investor.html">Investor Certificates</a></li>
+                      <li><a class="dropdown-item" href="cert_elec.html">Electrical Engineer Curriculum</a></li>
+                </ul>
+            </div>
+            <div class="nav-item dropdown">
+                <button class="btn btn-primary dropdown-toggle menu" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Projects
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="proj_it.html">IT Projects</a></li>
+                    <li><a class="dropdown-item" href="proj_investor.html">Investor Projects</a></li>
+                    <li><a class="dropdown-item" href="proj_elec.html">Electrical Engineer Projects</a></li>
+                </ul>
+            </div>
+
+          
+      </nav>
+      `;
+  }
+
+
+  
 
 
   ///////////////////////////////////////////////////////////////////////////////////////////////
