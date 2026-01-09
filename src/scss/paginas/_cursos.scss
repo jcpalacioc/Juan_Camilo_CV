@@ -1,0 +1,22 @@
+@use 'base/variables' as v;
+
+.h1_cursos{
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+    border: 2px solid rgb(74, 74, 74);
+    border-radius: 2rem;
+    font-weight: 700;
+}
+
+.course_container{
+    margin: 1rem;
+    h2{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: medium;
+        font-weight: 700;
+    }
+    padding: 2rem;
+    border: 2px solid rgb(74, 74, 74);
+    border-radius: 1rem;
+}

@@ -33,10 +33,10 @@ document.addEventListener('DOMContentLoaded',function(){
             <div class="nav-item dropdown">
                 <button class="btn btn-primary dropdown-toggle menu" type="button" data-bs-toggle="dropdown"
                     aria-expanded="false">
-                    Mis Creaciones
+                    Creaciones
                 </button>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../html/it.html">Cursos Creados</a></li>
+                    <li><a class="dropdown-item" href="../html/cursos_es.html">Cursos Creados</a></li>
                 </ul>
             </div>
 
@@ -58,18 +58,8 @@ document.addEventListener('DOMContentLoaded',function(){
                     Certificados
                 </button>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../html/cert_it.html">Certificados de Tecnología de la Información</a></li>
-                    <li><a class="dropdown-item" href="../html/cert_investor.html">Certificados como Gestor de Activos</a></li>
-                </ul>
-            </div>
-            <div class="nav-item dropdown">
-                <button class="btn btn-primary dropdown-toggle menu" type="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Proyectos
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../html/proj_it.html">Proyectos IT</a></li>
-                    <li><a class="dropdown-item" href="../html/proj_investor.html">Proyectos como Gestor de Activos</a></li>
+                    <li><a class="dropdown-item" href="../html/cert_it_es.html">Certificados de Tecnología de la Información</a></li>
+                    <li><a class="dropdown-item" href="../html/cert_investor_es.html">Certificados como Gestor de Activos</a></li>
                 </ul>
             </div>
         </nav>
@@ -133,56 +123,22 @@ document.addEventListener('DOMContentLoaded',function(){
 
 
   ///////////////////////////////////////////////////////////////////////////////////////////////
-  let parentCanva=document.querySelectorAll(".contenido-exp")[0];
-  let canvas = document.querySelectorAll(".barra-lateral")[0];
-  canvas.height=parentCanva.clientHeight
-  let ctx = canvas.getContext("2d");
-  // Set dot properties
-  const dotX = 15; // X-coordinate
-  const dotY = 20; // Y-coordinate
-  const dotRadius = 8; // Dot radius
-  let dotColor = "green"; // Dot color
 
-  // Draw the green dot
-  ctx.beginPath();
-  ctx.arc(dotX, dotY, dotRadius, 0, 2 * Math.PI);
-  ctx.fillStyle = dotColor;
-  ctx.fill();
-
-  ctx.strokeStyle = "black";
-
-
-  ctx.moveTo(15, 28);
-  ctx.lineTo(15, parentCanva.clientHeight);
-  ctx.stroke();
-
-  //Segundo canva sobre la experiencia freelance
-  parentCanva=document.querySelectorAll(".contenido-exp")[1];
-  canvas = document.querySelectorAll(".barra-lateral")[1];
-  canvas.height=parentCanva.clientHeight
-  ctx = canvas.getContext("2d");
-
-  dotColor = "orange"; // Dot color
-
-  // Draw the green dot
-  ctx.beginPath();
-  ctx.arc(dotX, dotY, dotRadius, 0, 2 * Math.PI);
-  ctx.fillStyle = dotColor;
-  ctx.fill();
-
-  ctx.strokeStyle = "black";
-
-
-  ctx.moveTo(15, 28);
-  ctx.lineTo(15, parentCanva.clientHeight);
-  ctx.stroke();
+  ///////////////////////////////////////////////////////////////////////////////////////
 
 
 
   //Change the footer last update
-  const footer=document.querySelector('footer');
-  const footer_date=footer.childNodes[3];
-  footer_date.textContent='Last update 2025-01-11.'
+  let footer=document.querySelector('.footer');
+  //const footer_date=footer.childNodes[3];
+  //footer_date.textContent='Last update 2025-12-18.'
+  //const footer_content=footer.childNodes[5]
+  //footer_content.textContent='Designed by Juan Camilo Palacio Castaño'
+  footer.innerHTML=`
+        <p class="fw-bold">Juan Camilo Palacio Castaño. Website &#169</p>
+        <p class="fs-2">Ultima Actualización 2025-12-11.</p>
+        <p class="fs-2">Designed by Juan Camilo Palacio Castaño</p>
+    `;
 
   // Function to select a specific table column by index
   function selectTableColumn(table, columnIndex) {
