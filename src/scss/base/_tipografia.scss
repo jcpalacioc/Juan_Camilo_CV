@@ -14,10 +14,10 @@ h2 {
 h3 {
     font-size: 4rem;
 }
-p {
+p{
     font-size: 2rem;
     color: v.$grisOscuro;
-    line-height: 1.8;
+    line-height: 1.7;
 }
 .tagline{
     font-family: v.$fuente_headings;
@@ -28,4 +28,9 @@ p {
 }
 .descripcion-pagina{
     text-align: center;
+}
+li{
+    font-size: 1.4rem;
+    color: v.$grisOscuro;
+    line-height: 1.7;
 }

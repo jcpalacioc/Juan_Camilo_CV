@@ -15,8 +15,36 @@
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         font-size: medium;
         font-weight: 700;
+        font-size: x-large;
+        text-align: center;
     }
     padding: 2rem;
     border: 2px solid rgb(74, 74, 74);
     border-radius: 1rem;
+}
+.course_button{
+    margin: 1rem 0rem;
+    background-color: rgb(0, 50, 200);
+    color: white;
+    border-radius: 1rem;
+    font-size: x-large;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 0.5rem;
+    :hover{
+        background-color: rgb(0, 30, 150);
+    }
+}
+.course_button:hover{
+    background-color: rgb(0, 30, 150);
+}
+
+.course_content{
+    display: flex;
+    flex-direction: row;
+}
+.course_facts{
+    margin-left: 1rem;
+    min-width: 50%;
 }
