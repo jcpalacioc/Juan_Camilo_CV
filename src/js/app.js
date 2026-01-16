@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded',function(){
   //Create the header template
   let header_el=document.querySelector('.header-main');
 
-  if (fileName.endsWith("_es.html")) {
+  if (fileName.endsWith("_es.html") | fileName.endsWith("_es")) {
       header_el.innerHTML=`
       <a href='../es/index.html' class="enlace-logo">
             <h1 class="logo">Juan Camilo Palacio Castaño</h1>
