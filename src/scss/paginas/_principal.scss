@@ -5,7 +5,11 @@
 
 .creaciones_prom{
     display: flex;
+    flex-direction: column;
     margin-top: 2rem;
+    @include m.tablet{
+        flex-direction: row;
+    }
 }
 
 .heading_principal{
@@ -18,7 +22,10 @@
 .creaciones_img{
     display: flex;
     position: relative;
-    width: 40%;
+    width: 100%;
+    @include m.tablet{
+        width: 40%;
+    }
     ::after{
         content: "";
         position: absolute;
@@ -32,7 +39,10 @@
 }
 
 .creaciones_prom_desc{
-    width: 60%;
+    width: 100%;
+    @include m.tablet{
+        width: 60%;
+    }
     padding: 1rem;
     background-color: v.$grisOscuro;
     color: white;
@@ -201,6 +211,7 @@
     width: 100%;
     button{
         width: 100%;
+        margin: 0;
     }
 
     @include m.telefono{
