@@ -101,17 +101,6 @@ document.addEventListener('DOMContentLoaded',function(){
                       <li><a class="dropdown-item" href="cert_elec.html">Electrical Engineer Curriculum</a></li>
                 </ul>
             </div>
-            <div class="nav-item dropdown">
-                <button class="btn btn-primary dropdown-toggle menu" type="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Projects
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="proj_it.html">IT Projects</a></li>
-                    <li><a class="dropdown-item" href="proj_investor.html">Investor Projects</a></li>
-                    <li><a class="dropdown-item" href="proj_elec.html">Electrical Engineer Projects</a></li>
-                </ul>
-            </div>
 
           
       </nav>
