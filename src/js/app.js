@@ -64,6 +64,18 @@ document.addEventListener('DOMContentLoaded',function(){
             </div>
         </nav>
       `;
+
+       //Change the footer last update
+    let footer=document.querySelector('.footer');
+    //const footer_date=footer.childNodes[3];
+    //footer_date.textContent='Last update 2025-12-18.'
+    //const footer_content=footer.childNodes[5]
+    //footer_content.textContent='Designed by Juan Camilo Palacio Castaño'
+    footer.innerHTML=`
+            <p class="fw-bold">Juan Camilo Palacio Castaño. Website &#169</p>
+            <p class="fs-2">Ultima Actualización 2026-06-14.</p>
+            <p class="fs-2">Designed by Juan Camilo Palacio Castaño</p>
+        `;
   } else {
       header_el.innerHTML=`
       <a href='../index.html' class="enlace-logo"><h1 class="logo">Juan Camilo Palacio Castaño</h1></a>
@@ -105,6 +117,18 @@ document.addEventListener('DOMContentLoaded',function(){
           
       </nav>
       `;
+
+      //Change the footer last update
+    let footer=document.querySelector('.footer');
+    //const footer_date=footer.childNodes[3];
+    //footer_date.textContent='Last update 2025-12-18.'
+    //const footer_content=footer.childNodes[5]
+    //footer_content.textContent='Designed by Juan Camilo Palacio Castaño'
+    footer.innerHTML=`
+            <p class="fw-bold">Juan Camilo Palacio Castaño. Website &#169</p>
+            <p class="fs-2">Last Updated 2026-06-14.</p>
+            <p class="fs-2">Designed by Juan Camilo Palacio Castaño</p>
+        `;
   }
 
 
@@ -117,17 +141,7 @@ document.addEventListener('DOMContentLoaded',function(){
 
 
 
-  //Change the footer last update
-  let footer=document.querySelector('.footer');
-  //const footer_date=footer.childNodes[3];
-  //footer_date.textContent='Last update 2025-12-18.'
-  //const footer_content=footer.childNodes[5]
-  //footer_content.textContent='Designed by Juan Camilo Palacio Castaño'
-  footer.innerHTML=`
-        <p class="fw-bold">Juan Camilo Palacio Castaño. Website &#169</p>
-        <p class="fs-2">Ultima Actualización 2025-12-11.</p>
-        <p class="fs-2">Designed by Juan Camilo Palacio Castaño</p>
-    `;
+ 
 
   // Function to select a specific table column by index
   function selectTableColumn(table, columnIndex) {
