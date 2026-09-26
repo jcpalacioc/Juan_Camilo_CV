@@ -21,8 +21,9 @@ document.addEventListener('DOMContentLoaded',function(){
 
   //Create the header template
   let header_el=document.querySelector('.header-main');
+  const existe_header_es=document.querySelector('.header-main-es')!==null;
 
-  if (fileName.endsWith("_es.html") | fileName.endsWith("_es")) {
+  if (fileName.endsWith("_es.html") | fileName.endsWith("_es") | existe_header_es) {
       header_el.innerHTML=`
       <a href='../es/index.html' class="enlace-logo">
             <h1 class="logo">Juan Camilo Palacio Castaño</h1>
